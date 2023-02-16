@@ -8,7 +8,7 @@ Planning a date can be stressful. While there is not a lot you can do to allevia
 
 Provide an interface that helps the user to identify: 
 - one form of entertainment 
- 	-  movie, activity, game, etc.
+  -  movie, activity, game, etc.
 - 	one area to visit 
   - 	Restaurant, Park, etc.
 And keep track of which date they are planning: 
@@ -35,10 +35,10 @@ At a base level, your web app should perform an API call, pull back the desired 
 Should you be tempted to add any additional functionality, please keep in mind that we are only looking for an MVP. Build this with the mindset that it could be enhanced in follow-on iterations if they were to exist. There is no need to try and insert anything complex as this is a project designed to show your ability to work together to produce a technical product from an ambiguous requirement in an agile fashion. 
 
 
-#Tools & Resources
+<h2>Tools & Resources</h2>
 
-<h2>Resource	Link</h2>
-React	https://reactjs.org/docs/getting-started.html 
+
+- React	https://reactjs.org/docs/getting-started.html 
 
 - Create React App	https://create-react-app.dev/ 
 
