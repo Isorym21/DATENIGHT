@@ -8,7 +8,7 @@ Planning a date can be stressful. While there is not a lot you can do to allevia
 
 Provide an interface that helps the user to identify: 
 - one form of entertainment 
- 	- movie, activity, game, etc.
+ 	-  movie, activity, game, etc.
 - 	one area to visit 
   - 	Restaurant, Park, etc.
 And keep track of which date they are planning: 
