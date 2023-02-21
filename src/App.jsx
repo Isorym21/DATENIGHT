@@ -2,12 +2,12 @@
 import { Route, Routes } from "react-router-dom";
 
 // The Components for the Web App
-import { Header } from "./components/Header";
-import { WelcomeScreen } from "./components/WelcomeScreen";
-import { Form } from "./components/Form";
-import { DateOptions } from "./components/DateOptions";
-import { FinalDateInfo } from "./components/FinalDateInfo";
-import { Footer } from "./components/Footer";
+import { Header } from "./components/Header/Header.jsx";
+import { WelcomeScreen } from "./components/WelcomeScreen/WelcomeScreen.jsx";
+import { Form } from "./components/Form/Form.jsx";
+import { DateOptions } from "./components/DateOptions/DateOptions.jsx";
+import { FinalDateInfo } from "./components/FinalDateInfo/FinalDateInfo.jsx";
+import { Footer } from "./components/Footer/Footer.jsx";
 
 // START OF THE APP
 export function App() {
