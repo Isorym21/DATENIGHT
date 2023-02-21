@@ -1,13 +1,13 @@
 // Reacts Tools needed to route around the web app
 import { Route, Routes } from "react-router-dom";
 
-// The Components for the Web App
-import { Header } from "./components/Header/Header.jsx";
-import { WelcomeScreen } from "./components/WelcomeScreen/WelcomeScreen.jsx";
-import { Form } from "./components/Form/Form.jsx";
-import { DateOptions } from "./components/DateOptions/DateOptions.jsx";
-import { FinalDateInfo } from "./components/FinalDateInfo/FinalDateInfo.jsx";
-import { Footer } from "./components/Footer/Footer.jsx";
+// The Containers for the Web App
+import { Header } from "./containers/Header/Header.jsx";
+import { WelcomeScreen } from "./containers/WelcomeScreen/WelcomeScreen.jsx";
+import { Form } from "./containers/Form/Form.jsx";
+import { DateOptions } from "./containers/DateOptions/DateOptions.jsx";
+import { FinalDateInfo } from "./containers/FinalDateInfo/FinalDateInfo.jsx";
+import { Footer } from "./containers/Footer/Footer.jsx";
 
 // START OF THE APP
 export function App() {

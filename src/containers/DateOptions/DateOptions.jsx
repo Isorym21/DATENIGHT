@@ -1,4 +1,3 @@
-//useState & useEffect will deal with the state handlers
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 //axios will pull information from the API
@@ -14,7 +13,7 @@ const API_KEY1 = "?api_key=0mi6eSYgNcmFw9h8zjAb0O926BYVBPVlJejOQbnw";
 const URL2 = "https://api.nasa.gov/planetary/apod";
 const API_KEY2 = "?api_key=0mi6eSYgNcmFw9h8zjAb0O926BYVBPVlJejOQbnw";
 
-export function Form() {
+export function DateOptions(props) {
   // State setters
   const [eventData, setEventData] = useState({});
   const [locationData, setLocationData] = useState({});
@@ -26,7 +25,7 @@ export function Form() {
         .get(`${URL1}${API_KEY1}`)
         .then((response) => {
           setEventData(response.data);
-          console.log(response.data);
+          // console.log(response.data);
         })
         .catch((error) => {
           console.log("404!");
@@ -53,20 +52,14 @@ export function Form() {
 
   return (
     <div>
-      <h1>Form</h1>
+      {/* THE DATE OPTIONS WILL APPEAR ON THIS SCREEN. API WILL USE DATA FROM THE FORM AND DISPLAY THE DATE THAT MEETS REQUIREMENTS  */}
+      <h1>DateOptions</h1>
+      <button>
+        <Link to="/FinalDateInfo"> Summary of the date choosen</Link>
 
-      <form>
-        {/* iNPUTS WILL GO HERE */}
-
-        <button>
-          <Link
-            to="/dateOptions"
-            state={{ eventData: { eventData }, locationData: { locationData } }}
-          >
-            DATE OPTIONS
-          </Link>
-        </button>
-      </form>
+        {console.log(eventData.title)}
+        {console.log(locationData.explanation)}
+      </button>
     </div>
   );
 }
