@@ -3,6 +3,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export function Form() {
+  const zipCode = 10470;
+
   return (
     <div>
       <h1>Form</h1>
@@ -11,7 +13,7 @@ export function Form() {
         {/* iNPUTS WILL GO HERE */}
 
         <button>
-          <Link to="/dateOptions">DATE OPTIONS</Link>
+          <Link to="/dateOptions?zipcode={zipCode}">DATE OPTIONS</Link>
         </button>
       </form>
     </div>

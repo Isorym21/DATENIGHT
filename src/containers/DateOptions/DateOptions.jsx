@@ -17,6 +17,15 @@ export function DateOptions(props) {
   // State setters
   const [eventData, setEventData] = useState({});
   const [locationData, setLocationData] = useState({});
+  const [zipcode, setZipCode] = useState("");
+
+  // INFO PASSED DOWN FROM PROPS
+  useEffect(() => {
+    const queryParams = new URLSearchParams(window.location.search);
+    const flow = queryParams.get("zipcode");
+
+    console.log("zipcode", flow);
+  }, []);
 
   // fetching API for EVENTS and using useEffect so it only renders once.
   useEffect(() => {
@@ -25,7 +34,7 @@ export function DateOptions(props) {
         .get(`${URL1}${API_KEY1}`)
         .then((response) => {
           setEventData(response.data);
-          // console.log(response.data);
+          console.log(response.data);
         })
         .catch((error) => {
           console.log("404!");
@@ -54,11 +63,15 @@ export function DateOptions(props) {
     <div>
       {/* THE DATE OPTIONS WILL APPEAR ON THIS SCREEN. API WILL USE DATA FROM THE FORM AND DISPLAY THE DATE THAT MEETS REQUIREMENTS  */}
       <h1>DateOptions</h1>
+
+      <div className="dateCard">
+        <img alt="" src={eventData.url}></img>
+        <p>{eventData.title}</p>
+        <p>{locationData.explanation}</p>
+      </div>
+
       <button>
         <Link to="/FinalDateInfo"> Summary of the date choosen</Link>
-
-        {console.log(eventData.title)}
-        {console.log(locationData.explanation)}
       </button>
     </div>
   );
