@@ -5,7 +5,7 @@ export function WelcomeScreen() {
   return (
     <div>
       <h1>A special day with a special someone!</h1>
-      
+
       <div class="inner-wrapper">
         <div class="card">
           <div class="img-wrapper">
@@ -42,32 +42,3 @@ export function WelcomeScreen() {
     </div>
   );
 }
-
-export default WelcomeScreen;
-/*
-const WelcomeScreen = () => {
-  return (
-    <>
-      <Link />
-    </>
-  );
-};
-
-}
-export default WelcomeScreen;
-*/
-/////////////////////////////////////
-/*
-export function WelcomeScreen() {
-  return (
-    <div>
-      <h1>Welcome Screen!!</h1>
-
-
-      <button>
-        <Link to="/form"> Let's plan a date!</Link>
-      </button>
-    </div>
-  );
-}
-*/
