@@ -5,7 +5,7 @@ export function WelcomeScreen() {
   return (
     <div>
       <h1>A special day with a special someone!</h1>
-
+      
       <div class="inner-wrapper">
         <div class="card">
           <div class="img-wrapper">
@@ -14,12 +14,7 @@ export function WelcomeScreen() {
               alt="Pizza Night"
             ></img>
           </div>
-
-          <h1>Card Title</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
-            dolore!
-          </p>
+          <h1>Pizza night</h1>
         </div>
         <div class="card">
           <div class="img-wrapper">
@@ -28,12 +23,7 @@ export function WelcomeScreen() {
               alt="Romantic date"
             ></img>
           </div>
-
-          <h1>Card Title</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
-            dolore!
-          </p>
+          <h1>Romantic date</h1>
         </div>
         <div class="card">
           <div class="img-wrapper">
@@ -42,12 +32,7 @@ export function WelcomeScreen() {
               alt="Beach sunset"
             ></img>
           </div>
-
-          <h1>Card Title</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
-            dolore!
-          </p>
+          <h1>Beach sunset</h1>
         </div>
       </div>
 
