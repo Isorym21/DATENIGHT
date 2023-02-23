@@ -1,3 +1,11 @@
+#menu-outer {
+	height: 84px;
+	background-color: #3A98B9;
+}
+.table {
+	display: table;
+	margin: 0 auto;
+}
 .Footer {
     width: 100%;
     cursor: pointer;
@@ -26,10 +34,14 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #3A98B9;
-}
+  display: inline;
+  min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+	}
 
 li {
-  float: center;
+  float: left;
 }
 
 li a {
