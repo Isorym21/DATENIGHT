@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <div>
     <span onClick={() => window.scroll(0, 0)} className="footer">
-      Project: 🌆 Date Night 💃🕺 Brought to you by:
+    🌆 Date Night 💃🕺 Brought to you by:
     </span>
     <ul className="authorgitlinks">
     <li><Link to='https://github.com/BryCor'>Bryan Cortez</Link></li>
