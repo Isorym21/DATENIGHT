@@ -8,7 +8,7 @@ div{
 
     margin: 1%;
     padding: 2%;
-    border: 1px solid #EEEEEE;
+    /* border: 1px solid #EEEEEE; */
     border-radius: 20px;
 }
 button{
@@ -19,7 +19,21 @@ button{
     text-decoration: none
 }
 
-.dateCard img{
+.dateCard{
+    background-color: black;
+     border: 1px solid #EEEEEE;
+     margin: 2% auto;
+     width: 30%;
+     height: 30%;
+}
 
+.dateCard img{
+width: 20%;
+height: 20%;
    
 }
+
+.dateCard .dateInfo{
+font-size: 12px;
+       
+    }

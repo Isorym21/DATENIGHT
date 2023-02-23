@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 //axios will pull information from the API
 import axios from "axios";
 
@@ -14,6 +14,9 @@ const URL2 = "https://api.nasa.gov/planetary/apod";
 const API_KEY2 = "?api_key=0mi6eSYgNcmFw9h8zjAb0O926BYVBPVlJejOQbnw";
 
 export function DateOptions(props) {
+  // const location = useLocation();
+  // const { from } = location.state;
+
   // State setters
   const [eventData, setEventData] = useState({});
   const [locationData, setLocationData] = useState({});
@@ -62,12 +65,14 @@ export function DateOptions(props) {
   return (
     <div>
       {/* THE DATE OPTIONS WILL APPEAR ON THIS SCREEN. API WILL USE DATA FROM THE FORM AND DISPLAY THE DATE THAT MEETS REQUIREMENTS  */}
-      <h1>DateOptions</h1>
+      <h1>Date Options</h1>
 
       <div className="dateCard">
         <img alt="" src={eventData.url}></img>
-        <p>{eventData.title}</p>
-        <p>{locationData.explanation}</p>
+        <div className="dateInfo">
+          <h1>{eventData.title}</h1>
+          <p>{locationData.explanation}</p>
+        </div>
       </div>
 
       <button>
