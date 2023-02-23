@@ -1,24 +1,38 @@
 //useState & useEffect will deal with the state handlers
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-export function Form() {
-  const zipCode = 10470;
+import { DateOptions } from "../DateOptions/DateOptions";
 
-  // {
-  //   const handleClick = () => {
-  //     console.log("this is:", this);
-  //   };
-  // }
+export function Form() {
+  // const zipCode = 10470;
+
+  // State setters for the inputs
+  const [dateType, setDateType] = useState("");
+  const [zipCode, setZipCode] = useState("");
+  const [dayOfWeek, setDayOfWeek] = useState("");
+  const [time, setTime] = useState("");
+
+  // const handleClick = () => {
+  //   console.log("this is:", this);
+  // };
+
+  // Event handlers for the form
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log("You clicked submit.");
+  }
+
   return (
     <div>
       <h1>Form</h1>
 
-      <form>
+      <form onSubmit={handleSubmit}>
         {/* iNPUTS WILL GO HERE */}
         {/* onClick={this.handleClick} */}
-        <button>
-          <Link to="/dateOptions?zipcode={zipCode}">DATE OPTIONS</Link>
+        <button type="submit">
+          <Link to="/dateOptions?zipcode={zipCode}">Submit Input Values</Link>
+          {/* <DateOptions></DateOptions> */}
         </button>
       </form>
     </div>
