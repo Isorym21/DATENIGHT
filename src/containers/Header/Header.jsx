@@ -1,9 +1,11 @@
 import React from "react";
+import "./Header.css"; // Importing the Style of the header 
 
 export function Header() {
   return (
-    <div>
-      <h1>Header</h1>
-    </div>
+
+    <span onClick={() => window.scroll(0, 0)} className="header">
+    🌆 Date Night 💃🕺
+  </span>
   );
 }
