@@ -1,8 +1,8 @@
 .header {
     width: 100%;
     cursor: pointer;
-    position: fixed;
-    display: flex;
+    position: flex;
+    display: fixed;
     justify-content: center;
     text-transform: uppercase;
     background-color: #3A98B9;
