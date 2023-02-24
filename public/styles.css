@@ -2,23 +2,61 @@ body{
     background-color: #3A98B9;
     color: #FFF1DC;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 div{
 
     margin: 1%;
     padding: 2%;
-    /* border: 1px solid #EEEEEE; */
-    border-radius: 20px;
+    border: 1px solid #EEEEEE; 
+    border-radius: 15px;
 }
 button{
-    background-color: #E8D5C4;
+    background-color: #E90064;
     border: 1px solid #EEEEEE;
     border-radius: 20px;
     padding: 1.2%;
     text-decoration: none
 }
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #363636;
+    font-size: 40px;
+  }
 
+
+/*welcome screen */
+*, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+  }
+  .inner-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .card {
+    flex-basis: 30%;
+    padding: 15px;
+  }
+  .img-wrapper {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 10px;
+    padding: none;
+    margin: none;
+  }
+  .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+  }
 .dateCard{
     background-color: black;
      border: 1px solid #EEEEEE;
