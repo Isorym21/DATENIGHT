@@ -64,7 +64,7 @@ export function Form() {
 						<option value="movies">Movies</option>
 						<option value="park">Park</option>
 					</select>
-					<input id="datetype" placeholder="Ex: Movies, Park" type="text" class="input"></input>
+					{/* <input id="datetype" placeholder="Ex: Movies, Park" type="text" class="input"></input> */}
 					<span class="error-message"></span>
 					<svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
 						<title>check-circle</title>
