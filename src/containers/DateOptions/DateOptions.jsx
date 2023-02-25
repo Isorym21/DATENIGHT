@@ -13,22 +13,28 @@ const API_KEY1 = "?api_key=0mi6eSYgNcmFw9h8zjAb0O926BYVBPVlJejOQbnw";
 const URL2 = "https://api.nasa.gov/planetary/apod";
 const API_KEY2 = "?api_key=0mi6eSYgNcmFw9h8zjAb0O926BYVBPVlJejOQbnw";
 
-export function DateOptions(props) {
-  // const location = useLocation();
-  // const { from } = location.state;
+export function DateOptions({ dateType, zipCode, dayOfWeek }) {
+  // useLocation to draw put the props from the Form
+  const { state } = useLocation();
+
+  // console.log(state);
+
+  // console.log(state.dateType.dateType);
+  // console.log(state.zipCode);
+  // console.log(state.dayOfWeek);
 
   // State setters
   const [eventData, setEventData] = useState({});
   const [locationData, setLocationData] = useState({});
-  const [zipcode, setZipCode] = useState("");
+  const [dateOptions, setDateOptiona] = useState([]);
 
-  // INFO PASSED DOWN FROM PROPS
-  useEffect(() => {
-    const queryParams = new URLSearchParams(window.location.search);
-    const flow = queryParams.get("zipcode");
+  // // INFO PASSED DOWN FROM PROPS
+  // useEffect(() => {
+  //   const queryParams = new URLSearchParams(window.location.search);
+  //   const flow = queryParams.get("zipcode");
 
-    console.log("zipcode", flow);
-  }, []);
+  //   console.log("zipcode", flow);
+  // }, []);
 
   // fetching API for EVENTS and using useEffect so it only renders once.
   useEffect(() => {
@@ -37,7 +43,7 @@ export function DateOptions(props) {
         .get(`${URL1}${API_KEY1}`)
         .then((response) => {
           setEventData(response.data);
-          console.log(response.data);
+          // console.log(response.data);
         })
         .catch((error) => {
           console.log("404!");
@@ -76,7 +82,18 @@ export function DateOptions(props) {
       </div>
 
       <button>
-        <Link to="/FinalDateInfo"> Summary of the date choosen</Link>
+        <Link
+          to="/FinalDateInfo"
+          state={{
+            dateType: { state },
+            zipCode: { state },
+            dayOfWeek: { state },
+            eventData: { eventData },
+          }}
+        >
+          {" "}
+          Summary of the date choosen
+        </Link>
       </button>
     </div>
   );
