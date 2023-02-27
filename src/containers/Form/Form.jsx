@@ -128,24 +128,6 @@ export function Form() {
 					</svg>
 				</div>
 
-				{/* <div class="input-group">
-					<label for="time" class="label">What time does your Date start? </label>
-					<input id="time" type="time" class="input" placeholder="Ex: 8:00 PM"></input>
-					<span class="error-message"></span>
-					<svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-						<title>check-circle</title>
-						<g fill="none">
-							<path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-						</g>
-					</svg>
-
-					<svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-						<title>exclamation-circle</title>
-						<g fill="none">
-							<path d="M12 8v4m0 4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-						</g>
-					</svg>
-				</div> */}
 				</fieldset>
 
 			{/* <input type="submit" value="Create account"></input> */}
