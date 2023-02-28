@@ -2,7 +2,8 @@
 	height: 84px;
 	background-color: #3A98B9;
 }
-.table {
+/*Added a table to organize the footer links horizontally*/
+.table { 
 	display: table;
 	margin: 0 auto;
 }
@@ -28,6 +29,7 @@
       font-size: 6.4vw;
     }
   }
+/*Added some css styling to the list*/
 ul {
   list-style-type: none;
   margin: 0;

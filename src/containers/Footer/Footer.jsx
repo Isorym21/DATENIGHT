@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css"; // Importing the Style of the footer
-
+//Footer element for the app that adds hyperlinks to all of the authors githubs. 
 export function Footer() {
   return (
     <div className="footerall">
