@@ -31,6 +31,7 @@
   }
 /*Added some css styling to the list*/
 ul {
+  font-family: "Montserrat", sans-serif;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -43,10 +44,12 @@ ul {
 	}
 
 li {
+  font-family: "Montserrat", sans-serif;
   float: left;
 }
 
 li a {
+  font-family: "Montserrat", sans-serif;
   display: block;
   color: white;
   text-align: center;
@@ -55,6 +58,7 @@ li a {
 }
 
 li a:hover {
+  font-family: "Montserrat", sans-serif;
   background-color: #EAFDFC;
 }
   
