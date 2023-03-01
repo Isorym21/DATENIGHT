@@ -13,6 +13,7 @@
     color: white;
     z-index: 100;
   }
+  
   @media (max-width: 1000px) {
     .header {
       padding-top: 15px;
