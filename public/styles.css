@@ -17,7 +17,8 @@ button{
     border: 1px solid #EEEEEE;
     border-radius: 20px;
     padding: 1.2%;
-    text-decoration: none
+    text-decoration: none;
+    margin-top: 20px;;
 }
 h1 {
     text-align: center;
@@ -25,6 +26,13 @@ h1 {
     color: #363636;
     font-size: 40px;
   }
+
+input{
+  margin-left: 20px;
+}
+select{
+  margin-left: 20px;
+}
 
 
 /*welcome screen */
@@ -75,3 +83,4 @@ height: 20%;
 font-size: 12px;
        
     }
+

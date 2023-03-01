@@ -8,7 +8,7 @@ export function FinalDateInfo() {
   // Props from the DateOptions component using {state}
   const dateType = state.dateType.state.dateType.dateType;
   const zipCode = state.zipCode.state.zipCode.zipCode;
-  const dayOfWeek = state.dayOfWeek.state.dayOfWeek.dayOfWeek;
+  // const dayOfWeek = state.dayOfWeek.state.dayOfWeek.dayOfWeek;
   const eventData = state.eventData.eventData;
   // const image =
 
@@ -20,10 +20,10 @@ export function FinalDateInfo() {
       <h1>Final Date Info</h1>
 
       <div className="dateCard">
-        <img src={eventData.url} alt="date summary"></img>
-        <h2>Date Title:{dateType}</h2>
-        <p>Day of date:{zipCode}</p>
-        <p>Location of date:{dayOfWeek}</p>
+        <img src="" alt="date summary"></img>
+        <h2>Date Title: {dateType}</h2>
+        {/* <p>Day of date: {dayOfWeek}</p> */}
+        <p>Location of date: {zipCode}</p>
       </div>
 
       <button>
