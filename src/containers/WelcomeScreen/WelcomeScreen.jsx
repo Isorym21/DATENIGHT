@@ -5,7 +5,7 @@ import "./WelcomeScreen.css";
 export function WelcomeScreen() {
   return (
     <div>
-      <h1>A special day with a special someone!</h1>
+      <p>A special day with a special someone!</p>
 
       <div class="inner-wrapper">
         <div class="card">
@@ -15,7 +15,7 @@ export function WelcomeScreen() {
               alt="Pizza Night"
             ></img>
           </div>
-          <h1>Pizza Night</h1>
+          <p>Pizza Night</p>
         </div>
         <div class="card">
           <div class="img-wrapper">
@@ -24,7 +24,7 @@ export function WelcomeScreen() {
               alt="Romantic date"
             ></img>
           </div>
-          <h1>Romantic Date</h1>
+          <p>Romantic Date</p>
         </div>
         <div class="card">
           <div class="img-wrapper">
@@ -33,7 +33,7 @@ export function WelcomeScreen() {
               alt="Beach sunset"
             ></img>
           </div>
-          <h1>Beach Sunset</h1>
+          <p>Beach Sunset</p>
         </div>
       </div>
 
