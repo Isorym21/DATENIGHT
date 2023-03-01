@@ -15,7 +15,7 @@ export function WelcomeScreen() {
               alt="Pizza Night"
             ></img>
           </div>
-          <h1>Pizza night</h1>
+          <h1>Pizza Night</h1>
         </div>
         <div class="card">
           <div class="img-wrapper">
@@ -24,7 +24,7 @@ export function WelcomeScreen() {
               alt="Romantic date"
             ></img>
           </div>
-          <h1>Romantic date</h1>
+          <h1>Romantic Date</h1>
         </div>
         <div class="card">
           <div class="img-wrapper">
@@ -33,7 +33,7 @@ export function WelcomeScreen() {
               alt="Beach sunset"
             ></img>
           </div>
-          <h1>Beach sunset</h1>
+          <h1>Beach Sunset</h1>
         </div>
       </div>
 

@@ -13,6 +13,7 @@
   .card {
     flex-basis: 30%;
     padding: 15px;
+
   }
   .img-wrapper {
     width: 100%;
@@ -42,8 +43,5 @@ height: 20%;
    
 }
 
-.dateCard .dateInfo{
-font-size: 12px;
-       
-    }
+
 
