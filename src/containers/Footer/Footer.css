@@ -1,8 +1,9 @@
 #menu-outer {
 	height: 84px;
-	background-color: #3A98B9;
+	background-color: #82AAE3;
 }
-.table {
+/*Added a table to organize the footer links horizontally*/
+.table { 
 	display: table;
 	margin: 0 auto;
 }
@@ -13,7 +14,7 @@
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    background-color: #3A98B9;
+    background-color: #82AAE3;
     font-family: "Montserrat", sans-serif;
     font-size: 5vw;
     padding-bottom: 15px;
@@ -28,12 +29,13 @@
       font-size: 6.4vw;
     }
   }
+/*Added some css styling to the list*/
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #3A98B9;
+  background-color: #82AAE3;
   display: inline;
   min-width: 696px;
 	list-style: none;
@@ -53,6 +55,6 @@ li a {
 }
 
 li a:hover {
-  background-color: #08090942;
+  background-color: #EAFDFC;
 }
   

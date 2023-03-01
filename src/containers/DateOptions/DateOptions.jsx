@@ -2,82 +2,73 @@ import React, { useState, useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
 //axios will pull information from the API
 import axios from "axios";
+import {
+  Typography,
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Grid,
+  Container,
+  Button,
+} from "@mui/material";
 
-// Event API
+import useStyles from "../styles";
 
-const URL1 = "https://api.nasa.gov/planetary/apod";
-const API_KEY1 = "?api_key=0mi6eSYgNcmFw9h8zjAb0O926BYVBPVlJejOQbnw";
+const cards = [1, 2, 3];
 
-// Location API
+// DATEOPTIONS COMPONENT STARTS HERE
+export function DateOptions({ dateType, zipCode, eventData }) {
+  // useStyles is used to style
+  const classes = useStyles();
+  // useLocation to draw put the props from the Form
+  const { state } = useLocation();
 
-const URL2 = "https://api.nasa.gov/planetary/apod";
-const API_KEY2 = "?api_key=0mi6eSYgNcmFw9h8zjAb0O926BYVBPVlJejOQbnw";
-
-export function DateOptions(props) {
-  // const location = useLocation();
-  // const { from } = location.state;
-
-  // State setters
-  const [eventData, setEventData] = useState({});
-  const [locationData, setLocationData] = useState({});
-  const [zipcode, setZipCode] = useState("");
-
-  // INFO PASSED DOWN FROM PROPS
-  useEffect(() => {
-    const queryParams = new URLSearchParams(window.location.search);
-    const flow = queryParams.get("zipcode");
-
-    console.log("zipcode", flow);
-  }, []);
-
-  // fetching API for EVENTS and using useEffect so it only renders once.
-  useEffect(() => {
-    const fetchEventData = () => {
-      axios
-        .get(`${URL1}${API_KEY1}`)
-        .then((response) => {
-          setEventData(response.data);
-          console.log(response.data);
-        })
-        .catch((error) => {
-          console.log("404!");
-        });
-    };
-    fetchEventData();
-  }, []);
-
-  // fetching API for LOCATIONS and using useEffect so it only renders once.
-  useEffect(() => {
-    const fetchLocationData = () => {
-      axios
-        .get(`${URL2}${API_KEY2}`)
-        .then((response) => {
-          setLocationData(response.data);
-          // console.log(response.data)
-        })
-        .catch((error) => {
-          console.log("404!");
-        });
-    };
-    fetchLocationData();
-  }, []);
+  const dateArray1 = state.eventData.eventData[0];
+  const dateArray2 = state.eventData.eventData[1];
+  const dateArray3 = state.eventData.eventData[3];
+  console.log(dateArray1);
+  console.log(dateArray2);
+  console.log(dateArray3);
 
   return (
-    <div>
-      {/* THE DATE OPTIONS WILL APPEAR ON THIS SCREEN. API WILL USE DATA FROM THE FORM AND DISPLAY THE DATE THAT MEETS REQUIREMENTS  */}
+    <main>
       <h1>Date Options</h1>
 
-      <div className="dateCard">
-        <img alt="" src={eventData.url}></img>
-        <div className="dateInfo">
-          <h1>{eventData.title}</h1>
-          <p>{locationData.explanation}</p>
-        </div>
+      {/* THE DATE OPTIONS WILL APPEAR ON THIS SCREEN. API WILL USE DATA FROM THE FORM AND DISPLAY THE DATE THAT MEETS REQUIREMENTS  */}
+      <div className={classes.cardGrid}>
+        <Container className="" maxWidth="md">
+          <Grid container spacing={4}>
+            {cards.map((card) => (
+              <Grid key={card} item xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia className={classes.cardMedia} image=""></CardMedia>
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5">
+                      {}
+                    </Typography>
+                    <Typography variant="p">{}</Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button>
+                      <Link
+                        to="/FinalDateInfo"
+                        state={{
+                          dateType: { state },
+                          zipCode: { state },
+                          eventData: { eventData },
+                        }}
+                      >
+                        Select This Date
+                      </Link>
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
       </div>
-
-      <button>
-        <Link to="/FinalDateInfo"> Summary of the date choosen</Link>
-      </button>
-    </div>
+    </main>
   );
 }
